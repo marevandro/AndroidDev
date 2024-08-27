@@ -19,7 +19,7 @@ fun TarefaUm(){
 
 }
 fun TarefaDois() {
-    val reader = Scanner(System.`in`).apply {
+    /*val reader = Scanner(System.`in`).apply {
         useLocale(Locale.US)
     }
 
@@ -50,5 +50,14 @@ fun TarefaDois() {
         media > 7 -> println("Aprovado")
         media < 7 && media > 4 -> println("Recuperação!")
         media < 4 -> println("Reprovado")
+    }*/
+    val vetor = arrayOf(1,2,3,4,5,6,7,8,9,10)
+
+    for(i in vetor.indices){
+        if(vetor[i] % 2 === 1){
+            continue
+        }else{
+            print("${vetor[i]}")
+        }
     }
 }
